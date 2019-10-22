@@ -24,14 +24,13 @@ ListaSimple::ListaSimple(void){
 void ListaSimple::insertarinicioLista(int dato){
 	nodo *nuevo;
 			
-	//new crea un espacio de memoria para lo que le ha pasado y retorna un espacio de memoria.
 	nuevo = new nodo;
 	nuevo->dato = dato;
 	nuevo->sig = pInicio;
 	pInicio = nuevo;
 }
 	
-//Mostrando lista con un saltarin de forma iterativa (lazo)	
+
 void ListaSimple::mostrarLista(int p, int i){
 	nodo *s = pInicio;
 
@@ -46,7 +45,7 @@ void ListaSimple::mostrarLista(int p, int i){
 	cout<<"\nLa suma de los numeros pares de la lista es: "<<p<<endl;
 	cout<<"La suma de los numeros impares de la lista es: "<<i<<endl;
 }
-//Funcion MAIN
+
 int main (void){
 	
 	ListaSimple miLista;
